@@ -31,7 +31,7 @@ enum Velocidades : Int {
         
         velocidadKms = self.rawValue
         
-        msgVelocidad = " km por hora, " + msgVelocidad
+        msgVelocidad = "km por hora, " + msgVelocidad
         
         let resultado = (velocidadKms, msgVelocidad)
         
@@ -78,7 +78,7 @@ var resultado : (actual : Int, velocidadEnCadena : String)
 
 for i in 1...20 {
     resultado = miAuto.cambioDeVelocidad()
-    print( String(resultado.actual) + resultado.velocidadEnCadena)
+    print("\(resultado.actual) \(resultado.velocidadEnCadena)")
 }
 
 
